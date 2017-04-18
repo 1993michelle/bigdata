@@ -80,10 +80,10 @@ for path in list_files:
     
         with open(out + file_out, 'a',encoding='utf8') as f:
             if loop_ok == 0:
-                f.write("%s|%s|%s|%s" %(path, livro, capitulo, texto))
+                f.write("%s|%s|%s|%s\n" %(path, livro, capitulo, texto))
                 loop_ok+=1
             else:
-                f.write("|%s|%s|%s|%s" %(path, livro, capitulo, texto))
+                f.write("|%s|%s|%s|%s\n" %(path, livro, capitulo, texto))
                     
             f.close()
         
